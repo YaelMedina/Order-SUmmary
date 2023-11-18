@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  margin: 900;
+}
+
+.container {
+  background-color: white;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.container > img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+}
+
+.descriptionPlan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: .5em;
+  padding: 1em 1em;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5em;
+  margin: 1em 1em;
+}
+
+.description > h2,
+.description > p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.planTitle {
+  font-size: 0.9em;
+  color: var(--title-card);
+}
+
+.planPrice {
+  color: var(--text-card);
+}
+
+.cardChange {
+  align-self: center;
+  font-size: 0.8em;
+  margin-left: 0;
+  color: #3829e0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cardChange:hover {
+  text-decoration: none;
+}
+
+.cardCtaPayment {
+  display: block;
+  margin: auto;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 1em 5.4em;
+  border-radius: 0.7em;
+  outline: 0;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 10px #ebe6ff;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.cardCtaPayment:hover {
+  background-color: #7699ff;
+}
+
+.cardCancel {
+  display: block;
+  text-align: center;
+  margin: 2em 0 2.5em 0;
+  color: #838383;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cardCancel:hover {
+  color: rgb(1, 1, 42);
+}
